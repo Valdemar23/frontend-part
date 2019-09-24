@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Зворотній зв'язок</title>
+	<!--Вказування кодування-->
+	<meta http-equiv="content-type" content="text/html; charset=UTF-8"/>
+	<!--Вказування для роботів-->
+	<meta name="robots" content="index, follow"/>
+	<!--Ключові слова-->
+	<meta name="keywords" content="виготовлення візиток">
+	<!--Опис сторінки (сніпіт)-->
+	<meta name="description" content="Оперативне виготовлення візиток від однієї години">
+	<link href="Kajdax-The-Lost-Props-Jason-Mask.ico" rel="shortcut icon" type="image/x-icon"/>
+	<link rel="stylesheet" href="css/style.css" type="text/css">
+</head>
+<body id="page">
+	<div class="form">
+		<form name="order" method="post" action="send.php">
+			<ul>
+				<li>
+					<span>Введіть ваше ім'я:</span><br>
+					<input type="text" name="name" maxlength="30" size="30" required>
+				</li>
+				<li>
+					<span>Введіть ваш Е-mail:</span><br>
+					<input type="e-mail" name="email" maxlength="30" size="30" required>
+				</li>
+				<li>
+					<span>Введіть ваш телефон:</span><br>
+					<input type="text" name="phone" maxlength="30" size="30" required>
+				</li>
+				<li>
+					<select name="service" multiple>
+					<option value="">Візитки</option>
+					<option value="">Буклети</option>
+					<option value="">Листівки</option>
+					<option value="">Календарі</option>
+					</select>
+				</li>
+				<li>
+					<span>Введіть кількість:</span><br>
+					<input type="text" name="sum" required>
+				</li>
+				<li>
+					<span>Чи потрібен вам дизайн? </span><br>
+					<input type="radio" name="design" value="Need create design" required>
+					<span>Так, потрібен</span>
+				</li>
+				<li>
+					<input type="radio" name="design" value="Design exists" required>
+					<span>Ні, не потрібен</span>
+				</li>
+				<li>
+					<span>Коментарій до замовлення:</span><br>
+					<textarea name="comment" id="" cols="50" rows="10"></textarea>
+				</li>
+				<li>
+					<input type="submit" value="submit" class="button">
+				</li>
+			</ul>
+		</form>
+	</div>
+</body>
+</html>
